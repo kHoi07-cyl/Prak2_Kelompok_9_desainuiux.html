@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta nama="viewport" content="widht=device-width, initial-scale=1,0">
+        <tittle>Document</tittle>
+    </head>
+    <body>
+
+        <h1>form pemesanan pizza</h1>
+        <p>
+            silahkan isi form pemesanan ini dengan lengkap dan benar.
+        </p>
+
+        <form action="hasil.html" method="post">
+            <fieldset>
+            <legend>Informasi pemesanan pizza</legend>
+            <p>
+                <lebel for="customername">Nama:</lebel>
+                <input type="text" id="customername" name="customername" requider>
+            </p>
+            <p>
+                <lebel for="address">Address:</lebel>
+                <input type="text" id="address" name="address" requider>
+            </p>
+            <p>
+                <lebel for="telephone">Telephone:</lebel>
+                <input type="text" id="telephone" name="telephone" required>
+            </p>
+            <p>
+                <lebel for="email">Email:</lebel>
+                <input type="text" id="email" name="email" requider>
+            </p>
+            <p>
+                <lebel for="intruction">delivery instruction</lebel><br>
+                <textarea
+                    id="instruction"
+                    name="instruction"
+                    rows="4"
+                    cols="50"
+                    maxlength="400"
+                    placeholder="no more than 400 characters"></textarea>
+            </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Design your dream pizza</legend>
+                <p><strong>Pizza specs</strong></p>
+                <p>Choose one</p>
+
+                <p>
+                   <input type="radio" id="daging" name="topping" value="daging">
+                   <label for="daging">Red sauce</label><br>
+
+                   <input type="radio" id="peperoni" name="topping" value="peperoni">
+                   <label for="peperoni">Cheese sauce</label><br>
+
+                   <input type="radio" id="ayam" name="topping" value="ayam">
+                   <label for="ayam">Gluten-free</label><br>
+
+                   <input type="radio" id="classic" name="topping" value="classic white">
+                   <label for="classic">Tomato sauce</label><br>
+
+                   
+                </p>
+
+                <p><strong>Toppings</strong></p>
+                <p>Chose as many as you want</p>
+
+                <p>
+                   <input type="checkbox" id="classic" name="topping" value="classic white">
+                   <label for="classic">Chiken</label><br>
+
+                   <input type="checkbox" id="classic" name="topping" value="classic white">
+                   <label for="classic">Mozzarella cheese</label><br>
+
+                   <input type="checkbox" id="classic" name="topping" value="classic white">
+                   <label for="classic">Pepperoni</label><br>
+
+                   <input type="checkbox" id="classic" name="topping" value="classic white">
+                   <label for="classic">Mushrooms</label><br>
+
+                   <input type="checkbox" id="classic" name="topping" value="classic white">
+                   <label for="classic">Beef</label><br>
+
+                   <input type="checkbox" id="classic" name="topping" value="classic white">
+                   <label for="classic">Tuna fish</label><br>
+
+                   <input type="checkbox" id="classic" name="topping" value="classic white">
+                   <label for="classic">Corn</label><br>
+                </p>
+
+                <p>
+                    <label for="quantity">Quantity:</label>
+                    <select id="quantity" name="quantity" required>
+                        <option value="">--pilih jumlah--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </p>
+        </form>
+    </body>
+</html>
